@@ -1,3 +1,8 @@
 function insertMap(latitude, longitude) {
-  // code here
+    var mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: new google.maps.LatLng(latitude, longitude),
+          zoom: 8
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions);
 }
